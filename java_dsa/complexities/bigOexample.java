@@ -1,7 +1,10 @@
 package complexities;
 
 public class bigOexample {
-    //constant time = no matter the size of input the array asscesing any element takes a constant time
+
+    //constant time
+
+    // no matter the size of input the array asscesing any element takes a constant time
 
     //eample
     //accessing a specific elemnt in an array by index
@@ -12,5 +15,22 @@ public class bigOexample {
     };
 
         System.out.println(array[0]);
+
+
+
+        //O(n)
+
+//the time grows directly praportional to the size of the input
+
+//example= traversing an array of size
+
+    int a[] = {
+            4,5,6,7,3
+    };
+
+    for(int i=0 ; i<a.length;i++){
+        System.out.println(a[i]);
+    }
+
+    }
 }
-        }
