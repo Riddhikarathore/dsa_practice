@@ -1,8 +1,15 @@
 package complexities;
 
+//dsa main goal is to solve problem effectively and efficiently
+//to determine the effieiency of a program ,we look at two type of complexities
+//time complexity
+//space complexity
+
+//asympotic notation-to compare the efficiencies of algorithmstypes-bigO(O)-worst,omega()-best,theta()-avg
+//lets see bigO
 public class bigOexample {
 
-    //constant time
+    //constant time O(1)
 
     // no matter the size of input the array asscesing any element takes a constant time
 
@@ -18,7 +25,7 @@ public class bigOexample {
 
 
 
-        //O(n)
+        //O(n)-linear time
 
 //the time grows directly praportional to the size of the input
 
@@ -32,5 +39,45 @@ public class bigOexample {
         System.out.println(a[i]);
     }
 
+
+    //O(n^2)-quadratic time
+        //as the input grows the time taken increases quadratically
+
+        //bubble sort or checking all pair in an array
+
+
+    //O(log n )-logarithmic time
+        //the algorithm cuts the problem size in half with each step ,so the time grows logarithmiclly
+
+        //binary search
+
+        //O(nlog n ) - linearithmic time
+        // the algorithm divides the input into subproblems and process each subproblem linerly
+
+        //example marge sort and quick sort
+
+        //O(2^n)-exponential time complextity '
+        //the time grows exponential with the size of the input ,meaning it double with each input size
+
+        //example-fibonacci series
+
+        //O(n!)-factorial time complexity
+
+        //factorial time complexity occous in algorithms that involve generating all possible permutation
+
+        //example -brute force solution for the traveling salesman problem
+
+
+        //examples
     }
+    void print (){
+        System.out.println("hello");
+        int a =4;
+        int b = 10;
+        System.out.println("sum "+a+b);
+
+    }
+    //ab iski complexity O(1) hogi
+    //kyuki yaha 2 hi statement run hoge kitna bhi input hum dede
+    //complexity =O(1)
 }
