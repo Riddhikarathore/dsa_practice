@@ -80,4 +80,20 @@ public class bigOexample {
     //ab iski complexity O(1) hogi
     //kyuki yaha 2 hi statement run hoge kitna bhi input hum dede
     //complexity =O(1)
+
+    //example 2
+    int sumaaray(int[] arr){
+        int sum = 0;
+        for(int i =0; i<arr.length;i++){
+            sum += arr[i];
+        }
+        return sum;
+    }
+
+    //so basically yaha loop chl raha h aagr hum 5 element ka aaray denge toh ye loop 5 bar chalega
+    //or aagr 10 ka denge toh loop 10 bar chalega
+    //so ye ek linear complexity h
+
+    //complexity = O(n) hogi
+
 }
