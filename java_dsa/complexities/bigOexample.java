@@ -90,6 +90,10 @@ public class bigOexample {
         return sum;
     }
 
+
+
+    
+
     //so basically yaha loop chl raha h aagr hum 5 element ka aaray denge toh ye loop 5 bar chalega
     //or aagr 10 ka denge toh loop 10 bar chalega
     //so ye ek linear complexity h
