@@ -6,15 +6,16 @@ public class findelement {
 
         int nums[] ={1,3,5,4,6,7,8,};
         int target = 49;
-        boolean found ;
+        boolean found = false;
 
-        for(int num : nums ){
-            if(num == target){
-                found = true ;
+        for(int num : nums ) {
+            if (num == target) {
+                found = true;
+                break;
+
             }
-            else{
-                found = false ;
-            }
+        }
+
 
             if(found  ){
                 System.out.println("present");
@@ -24,7 +25,5 @@ public class findelement {
 
         }
 
-
-
     }
-}
+
