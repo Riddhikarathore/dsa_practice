@@ -11,8 +11,7 @@ public class findelement {
         for(int num : nums ) {
             if (num == target) {
                 found = true;
-                break;
-
+break;
             }
         }
 
