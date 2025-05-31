@@ -16,7 +16,7 @@ public class checkPalindrome {
         if (isPalindrome) {
             System.out.println("The array is a Palindrome.");
         } else {
-            System.out.println("The array is NOT a Palindrome.");
+            System.out.println("The array is NOT a Palindrome");
         }
     }
 }
