@@ -200,25 +200,121 @@ public class array {
 
     //left rotate array by dth place
 
+//    public static void main (String args[]){
+//        int arr[]= {2,4,6,8,10};
+//
+//        int d = 9;
+//
+//        for (int i =0;i<9;i++){
+//            int temp = arr[0];
+//
+//            for(int j= 0;j< arr.length-1;j++){
+//                arr[j]=arr[j+1];
+//            }
+//
+//            arr[arr.length-1]=temp;
+//        }
+//
+//        System.out.println("after rotation");
+//
+//        for(int i =0;i< arr.length;i++){
+//            System.out.print(arr[i]);
+//        }
+//    }
+
+       //move all zeros to last
+
+//    public static void main (String args[]){
+//        int arr[]={1,0,3,0,5,0};
+//        int index = 0;
+//        for(int i = 0;i<arr.length;i++){
+//            //left shift k liye
+//
+//            if(arr[i]!=0){
+//                arr[index]=arr[i];
+//                index++;
+//            }
+//        }
+//        //zeros ko last m kr denge
+//
+//        for(int i =index;i< arr.length;i++){
+//            arr[i]=0;
+//        }
+//        //final print
+//        for(int k = 0;k< arr.length;k++){
+//            System.out.print(arr[k]+" ");
+//        }
+//    }
+
+//    public static void main (String args[]){
+//        int arr[]={2,3,2,3,2,3,4,3,5,4};
+//        //sare element aayenge
+//        for(int i =0 ; i<arr.length;i++){
+//            boolean alreadycount= false;
+//
+//            //ab campare krenge
+//            for(int j =0;j< i;j++){
+//                if(arr[j]==arr[i]){
+//                    alreadycount=true;
+//                    break;
+//                }
+//            }
+//
+//            if(alreadycount==false){
+//                int count = 1;
+//                for(int k = i+1;k<arr.length;k++){
+//                    if (arr[k] == arr[i]){
+//                        count++;
+//                    }
+//
+//                }
+//
+//                System.out.println("number"+arr[i]+" frequency"+count);
+//            }
+//        }
+//
+//    }
+
+    //find the pair which give k
+
+
+//    public static void main (String args[]){
+//        int arr[]= {1,2,4,3,6};
+//        int k = 7;
+//        int count = 0;
+//
+//
+//        for(int i =0;i< arr.length;i++){
+//            for(int j = i+1;j< arr.length;j++){
+//                if(arr[i]+arr[j]==k) {
+//                    count++;
+//                }
+//            }
+//        }
+//
+//        System.out.println("the number of pair "+ count);
+//
+//    }
+
+
     public static void main (String args[]){
-        int arr[]= {2,4,6,8,10};
-
-        int d = 9;
-
-        for (int i =0;i<9;i++){
-            int temp = arr[0];
-
-            for(int j= 0;j< arr.length-1;j++){
-                arr[j]=arr[j+1];
-            }
-
-            arr[arr.length-1]=temp;
-        }
-
-        System.out.println("after rotation");
+        int arr[]={2,4,6,8,10};
+        int evencount = 0;
+        int oddcount =0;
 
         for(int i =0;i< arr.length;i++){
-            System.out.print(arr[i]);
+
+            if(arr[i]%2==0){
+                evencount++;
+            }
+            else{
+                oddcount++;
+            }
         }
+
+        System.out.println("the number of even elements :" + evencount);
+        System.out.println("the number of odd elements :"  + oddcount );
     }
+
+
 }
