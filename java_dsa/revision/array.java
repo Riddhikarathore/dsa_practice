@@ -297,24 +297,47 @@ public class array {
 //    }
 
 
+    //count even and add number in array
+
+//    public static void main (String args[]){
+//        int arr[]={2,4,6,8,10};
+//        int evencount = 0;
+//        int oddcount =0;
+//
+//        for(int i =0;i< arr.length;i++){
+//
+//            if(arr[i]%2==0){
+//                evencount++;
+//            }
+//            else{
+//                oddcount++;
+//            }
+//        }
+//
+//        System.out.println("the number of even elements :" + evencount);
+//        System.out.println("the number of odd elements :"  + oddcount );
+//    }
+
+
+    //find missing element
+
     public static void main (String args[]){
-        int arr[]={2,4,6,8,10};
-        int evencount = 0;
-        int oddcount =0;
+        int arr[]={2,3,4,5,6};
 
-        for(int i =0;i< arr.length;i++){
-
-            if(arr[i]%2==0){
-                evencount++;
-            }
-            else{
-                oddcount++;
-            }
+        int totalsum =0;
+        for(int i =0;i<arr.length;i++){
+            totalsum += arr[i];
         }
 
-        System.out.println("the number of even elements :" + evencount);
-        System.out.println("the number of odd elements :"  + oddcount );
-    }
+        //actualsum
+        int length = arr.length;
 
+        int actualsum = (length+1)*(length+2)/2;
+
+        int missing = actualsum - totalsum;
+
+
+        System.out.println("the missing element is :" +missing);
+    }
 
 }
