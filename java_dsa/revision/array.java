@@ -379,45 +379,80 @@ public class array {
 
 
 
-    public static void main(String[] args) {
-        int[] arr = {1, -2, 3, -4, 5, 6, -7};
-        rearrangeArray(arr);
+//    public static void main(String[] args) {
+//        int[] arr = {1, -2, 3, -4, 5, 6, -7};
+//        rearrangeArray(arr);
+//    }
+//
+//    public static void rearrangeArray(int[] arr) {
+//        List<Integer> pos = new ArrayList<>();
+//        List<Integer> neg = new ArrayList<>();
+//
+//        // Split the array into positive and negative lists
+//        for (int num : arr) {
+//            if (num >= 0)
+//                pos.add(num);
+//            else
+//                neg.add(num);
+//        }
+//
+//        int i = 0, j = 0, k = 0;
+//
+//        // Alternate placing of positive and negative elements
+//        while (i < pos.size() && j < neg.size()) {
+//            arr[k++] = pos.get(i++);
+//            arr[k++] = neg.get(j++);
+//        }
+//
+//        // Add remaining positive elements
+//        while (i < pos.size()) {
+//            arr[k++] = pos.get(i++);
+//        }
+//
+//        // Add remaining negative elements
+//        while (j < neg.size()) {
+//            arr[k++] = neg.get(j++);
+//        }
+//
+//        // Print the result
+//        System.out.println("Rearranged Array: " + Arrays.toString(arr));
+//    }
+
+
+    //Leaders in an Array
+
+
+
+
+
+        public static void main(String[] args) {
+            int[] arr = {16, 17, 4, 3, 5, 2};
+            findLeaders(arr);
+        }
+
+        public static void findLeaders(int[] arr) {
+            List<Integer> leaders = new ArrayList<>();
+            int n = arr.length;
+            int maxFromRight = arr[n - 1];
+
+            // Last element is always a leader
+            leaders.add(maxFromRight);
+
+            // Traverse from second last to start
+            for (int i = n - 2; i >= 0; i--) {
+                if (arr[i] > maxFromRight) {
+                    maxFromRight = arr[i];
+                    leaders.add(maxFromRight);
+                }
+            }
+
+            // Leaders were collected in reverse, so reverse the list
+            Collections.reverse(leaders);
+
+            System.out.println("Leaders in the array: " + leaders);
+        }
     }
 
-    public static void rearrangeArray(int[] arr) {
-        List<Integer> pos = new ArrayList<>();
-        List<Integer> neg = new ArrayList<>();
-
-        // Split the array into positive and negative lists
-        for (int num : arr) {
-            if (num >= 0)
-                pos.add(num);
-            else
-                neg.add(num);
-        }
-
-        int i = 0, j = 0, k = 0;
-
-        // Alternate placing of positive and negative elements
-        while (i < pos.size() && j < neg.size()) {
-            arr[k++] = pos.get(i++);
-            arr[k++] = neg.get(j++);
-        }
-
-        // Add remaining positive elements
-        while (i < pos.size()) {
-            arr[k++] = pos.get(i++);
-        }
-
-        // Add remaining negative elements
-        while (j < neg.size()) {
-            arr[k++] = neg.get(j++);
-        }
-
-        // Print the result
-        System.out.println("Rearranged Array: " + Arrays.toString(arr));
-    }
-    }
 
 
 
