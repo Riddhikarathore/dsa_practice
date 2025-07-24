@@ -373,6 +373,50 @@ public class array {
 //        }
 
 
+    //Rearrange Array Elements
+
+
+
+
+
+    public static void main(String[] args) {
+        int[] arr = {1, -2, 3, -4, 5, 6, -7};
+        rearrangeArray(arr);
+    }
+
+    public static void rearrangeArray(int[] arr) {
+        List<Integer> pos = new ArrayList<>();
+        List<Integer> neg = new ArrayList<>();
+
+        // Split the array into positive and negative lists
+        for (int num : arr) {
+            if (num >= 0)
+                pos.add(num);
+            else
+                neg.add(num);
+        }
+
+        int i = 0, j = 0, k = 0;
+
+        // Alternate placing of positive and negative elements
+        while (i < pos.size() && j < neg.size()) {
+            arr[k++] = pos.get(i++);
+            arr[k++] = neg.get(j++);
+        }
+
+        // Add remaining positive elements
+        while (i < pos.size()) {
+            arr[k++] = pos.get(i++);
+        }
+
+        // Add remaining negative elements
+        while (j < neg.size()) {
+            arr[k++] = neg.get(j++);
+        }
+
+        // Print the result
+        System.out.println("Rearranged Array: " + Arrays.toString(arr));
+    }
     }
 
 
