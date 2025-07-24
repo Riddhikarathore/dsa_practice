@@ -321,23 +321,60 @@ public class array {
 
     //find missing element
 
-    public static void main (String args[]){
-        int arr[]={2,3,4,5,6};
+//    public static void main (String args[]){
+//        int arr[]={2,3,4,5,6};
+//
+//        int totalsum =0;
+//        for(int i =0;i<arr.length;i++){
+//            totalsum += arr[i];
+//        }
+//
+//        //actualsum
+//        int length = arr.length;
+//
+//        int actualsum = (length+1)*(length+2)/2;
+//
+//        int missing = actualsum - totalsum;
+//
+//
+//        System.out.println("the missing element is :" +missing);
+//    }
 
-        int totalsum =0;
-        for(int i =0;i<arr.length;i++){
-            totalsum += arr[i];
-        }
 
-        //actualsum
-        int length = arr.length;
-
-        int actualsum = (length+1)*(length+2)/2;
-
-        int missing = actualsum - totalsum;
+   // Find the maximum sum of any subarray of size k in the array
 
 
-        System.out.println("the missing element is :" +missing);
+
+//        public static void main(String[] args) {
+//            int arr[] = {1, 4, 2, 10, 23, 3, 1, 0, 20};
+//            int k = 4;
+//            int n = arr.length;
+//
+//            if (n < k) {
+//                System.out.println("Invalid");
+//                return;
+//            }
+//
+//            // Step 1: Calculate sum of first window
+//            int windowSum = 0;
+//            for (int i = 0; i < k; i++) {
+//                windowSum += arr[i];
+//            }
+//
+//            int maxSum = windowSum;
+//
+//            // Step 2: Slide the window
+//            for (int i = k; i < n; i++) {
+//                windowSum += arr[i] - arr[i - k]; // Add next element, remove the first element of the previous window
+//                maxSum = Math.max(maxSum, windowSum);
+//            }
+//
+//            System.out.println("Maximum sum of subarray of size " + k + " is: " + maxSum);
+//        }
+
+
     }
 
-}
+
+
+
